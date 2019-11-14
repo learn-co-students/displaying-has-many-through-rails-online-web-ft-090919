@@ -29,7 +29,7 @@ Things get slightly more complicated when we talk about the relationship between
     <td> post_id </td>
     <td> user_id </td>
   </tr>
-  
+
   <tr>
     <td> 1 </td>
     <td> "I loved this post!" </td>
@@ -159,7 +159,7 @@ Let's say that on our `User#show` page we want our users to see a list of all of
 Because we've set up a join model, the interface will look almost identical. We can simply call the `posts` method on our user and iterate through.
 
 ```erb
-# app/views/users/show.html.erb
+## app/views/users/show.html.erb
 
 <h2><%= @user.username %> </h2> has commented on the following posts:
 
